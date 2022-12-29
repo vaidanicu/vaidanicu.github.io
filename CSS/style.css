@@ -162,6 +162,14 @@ body {
   background-color: rgba(0, 255, 38, 0.4);
 }
 
+/* page */
+
+.page {
+  display: none;
+  background: #fff;
+  border-radius: 0.5rem;
+  margin-bottom: 1.6rem;
+}
 /* light */
 
 #light {

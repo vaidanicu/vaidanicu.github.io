@@ -35,10 +35,12 @@
         </div>
       </div>
       <ul id="top-menu-bar">
-        <li><a href="#Home" data-page="home" class>Home</a></li>
-        <li><a href="#Skills" data-page="Skills" class>Skills</a></li>
-        <li><a href="#Projects" data-page="#Projects" class>Projects</a></li>
-        <li><a href="#Language" data-page="Language" class>Language</a></li>
+        <li><a href="#" onclick="showHomePage()">Home</a></li>
+        <li><a href="#" onclick="showskillsPage()">Skills</a></li>
+        <li>
+          <a href="#" onclick="showProjectsPage()">Projects</a>
+        </li>
+        <li><a href="#" onclick="showLanguagePage()">Language</a></li>
       </ul>
     </header>
     <section id="content">
@@ -86,12 +88,23 @@
       </div>
 
       <div id="main">
-        <div class="page">
-          <h2>Skills</h2>
-          <ul id="skills-list"></ul>
+        <div id="home" class="page">
+          <h2>Home</h2>
+          <p>About Me</p>
         </div>
 
-        <div class="page">
+        <div id="skills" class="page">
+          <h2>Skills</h2>
+          <ul id="skills-list">
+            <li class="favorit">html</li>
+          </ul>
+        </div>
+
+        <div id="projects" class="page">
+          <h2>Projects</h2>
+        </div>
+
+        <div id="language" class="page">
           <h2>Known Language</h2>
           <table border="1">
             <tr>

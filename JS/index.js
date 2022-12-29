@@ -13,21 +13,23 @@ ButtonTurnOn.addEventListener("click", function () {
   TurnOfPhoto.style.display = "none";
 });
 
-// Menu TopBar var
-var Home = document.getElementsByClassName("Home");
-var skillLi = document.getElementById("skills-list");
-
-//  Skills-List
-
-var skills = ["HTML", "CSS", "JavaScript"];
-var skillsHTML = "";
-var i = 0;
-for (var i = 0; i < skills.length; i++) {
-  skillsHTML += "<li>" + skills[i] + "</li>";
+function showHomePage() {
+  document.getElementById("home").style.display = "block";
 }
-skillLi.innerHTML = skillsHTML;
 
-document.addEventListener("click", function () {
-  Home.style.display = "none";
-  skillLi.style.display = "inline";
-});
+function showskillsPage() {
+  document.getElementById("home").style.display = "none";
+  document.getElementById("skills").style.direction = "block";
+}
+
+function showProjectsPage() {
+  document.getElementById("skills").style.display = "none";
+  document.getElementById("projects").style.display = "block";
+}
+
+function showLanguagePage() {
+  document.getElementById("projects").style.display = "none";
+  document.getElementById("language").style.display = "block";
+}
+
+showHomePage();

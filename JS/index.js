@@ -13,21 +13,32 @@ ButtonTurnOn.addEventListener("click", function () {
   TurnOfPhoto.style.display = "none";
 });
 
+// switch page
+
 function showHomePage() {
   document.getElementById("home").style.display = "block";
+  document.getElementById("skills").style.display = "none";
+  document.getElementById("projects").style.display = "none";
+  document.getElementById("language").style.display = "none";
 }
 
 function showskillsPage() {
   document.getElementById("home").style.display = "none";
   document.getElementById("skills").style.direction = "block";
+  document.getElementById("projects").style.display = "none";
+  document.getElementById("language").style.display = "none";
 }
 
 function showProjectsPage() {
+  document.getElementById("home").style.display = "none";
   document.getElementById("skills").style.display = "none";
   document.getElementById("projects").style.display = "block";
+  document.getElementById("language").style.display = "none";
 }
 
 function showLanguagePage() {
+  document.getElementById("home").style.display = "none";
+  document.getElementById("skillss").style.display = "none";
   document.getElementById("projects").style.display = "none";
   document.getElementById("language").style.display = "block";
 }

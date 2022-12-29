@@ -1,0 +1,9 @@
+// var skillLi = document.getElementById("skills-list");
+// var skills = ["HTML", "CSS", "JavaScript"];
+// var skillsHTML = "";
+// var i = 0;
+
+// for (var i = 0; i < skills.length; i++) {
+//   skillsHTML += "<li>" + skills[i] + "</li>";
+// }
+// skillLi.innerHTML = skillsHTML;

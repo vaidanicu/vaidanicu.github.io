@@ -107,6 +107,7 @@ body {
   margin: 0px;
   border-radius: 8px;
   border: 4px solid;
+  display: flex 1;
 }
 
 #side-menu section {
@@ -170,11 +171,6 @@ body {
   padding: 0;
 }
 
-#light,
-.img {
-  margin: auto;
-}
-
 #TurnOn {
   border: 1px solid rgb(0, 34, 255);
   border-radius: 8px;
@@ -231,6 +227,6 @@ body {
   margin: 0;
 }
 .Footer a:hover {
-  padding: 12px;
+  padding: 15px;
   background-color: rgba(255, 255, 255, 0.32);
 }

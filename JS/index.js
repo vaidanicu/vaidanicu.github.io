@@ -1,3 +1,43 @@
+// switch page
+
+function hide(id) {
+  document.getElementById(id).style.display = "none";
+}
+function show(id) {
+  document.getElementById(id).style.display = "block";
+}
+
+function hideAllPages() {
+  hide("home");
+  hide("skills");
+  hide("projects");
+  hide("language");
+}
+
+function showHomePage() {
+  hideAllPages();
+  show("home");
+}
+
+function showskillsPage() {
+  hideAllPages();
+  show("skills");
+}
+
+function showProjectsPage() {
+  hideAllPages();
+  show("projects");
+}
+
+function showLanguagePage() {
+  hideAllPages();
+  show("language");
+}
+
+showHomePage();
+
+// licht
+
 var ButtonTurnOn = document.getElementById("TurnOn");
 var TurnOnPhoto = document.getElementById("TurnOnPhoto");
 var ButtonTurnOff = document.getElementById("TurnOf");
@@ -12,42 +52,3 @@ ButtonTurnOn.addEventListener("click", function () {
   TurnOnPhoto.style.display = "inline";
   TurnOfPhoto.style.display = "none";
 });
-
-// switch page
-
-function hidePage(id) {
-  document.getElementById(id).style.display = "none";
-}
-function showPage(id) {
-  document.getElementById(id).style.display = "block";
-}
-
-function showHomePage() {
-  hidePage("skills");
-  hidePage("projects");
-  hidePage("language");
-  showPage("home");
-}
-
-function showskillsPage() {
-  showPage("skills");
-  hidePage("projects");
-  hidePage("language");
-  hidePage("home");
-}
-
-function showProjectsPage() {
-  hidePage("skills");
-  showPage("projects");
-  hidePage("language");
-  hidePage("home");
-}
-
-function showLanguagePage() {
-  hidePage("skills");
-  hidePage("projects");
-  showPage("language");
-  hidePage("home");
-}
-
-showHomePage();

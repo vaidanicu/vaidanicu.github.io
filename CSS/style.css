@@ -156,6 +156,20 @@ body {
   border-radius: 0.5rem;
   margin-bottom: 1.6rem;
 }
+#skills {
+  margin: 20px;
+}
+#skills-list {
+  margin: 20px;
+}
+
+#projects {
+  margin: 20px;
+}
+
+#language {
+  margin: 20px;
+}
 /* light */
 
 #TurnOn {

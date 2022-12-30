@@ -8,9 +8,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  border: 1px solid rgb(16, 16, 16);
   border-radius: 5px;
-  background-color: rgba(6, 60, 5, 0.676);
+  background-color: #ffffff;
 }
 
 /* header-wrapper */
@@ -19,77 +18,68 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-
+  background-color: rgb(56, 149, 127);
   padding: 0px;
   margin: 0;
+  height: 120px;
 }
 #header-info {
   flex: 1;
   padding: 0px;
   margin: 0;
-
   font-size: small;
 }
 #header-info h1 {
-  text-decoration: underline;
+  color: black;
 }
 
-#header-info h2 {
-  font-size: x-large;
+#Job-Title a {
+  color: black;
 }
 
 #my-pictures {
   padding: 10px;
-  width: 100;
-  height: 100;
 }
 
 #my-pictures img {
   border-radius: 50%;
-  border: 1px solid black;
-}
-
-/* spongebob image */
-
-#spongebob {
-  width: 120px;
-  height: 120px;
-  border: 1px solid black;
-  border-radius: 20%;
-  margin: 20px;
+  border: 3px solid rgb(253, 253, 253);
+  width: 100px;
 }
 
 /* top-menu-bar */
 
 #top-menu-bar {
   text-align: center;
-
-  padding: 10px;
+  background-color: rgb(47, 125, 107);
   margin: 0px;
-  border: 1px solid rgb(16, 16, 16);
-  border-radius: 5px;
+  padding: 0;
+  height: 50px;
+  border: 1px solid rgb(11, 11, 11);
+  border-radius: 2px;
 }
 
 #top-menu-bar li {
   display: inline-block;
-  margin: 0px;
-  padding: 0px;
-  color: rgb(144, 0, 0);
-  font-size: xx-large;
+  margin: 1px;
+  padding: 1px;
+  width: 240px;
 }
 
 #top-menu-bar a {
   text-decoration: none;
-  color: #0000006a;
-  padding: 5px 5px;
-  text-decoration: underline;
+  color: white;
+  text-align: center;
+  padding: 12px;
   transition: 0.5s;
+  display: block;
+  margin: 0;
 }
 
 #top-menu-bar a:hover {
   color: rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.32);
-  padding: 10px;
+  display: block;
 }
 
 /* content */
@@ -98,56 +88,46 @@ body {
   flex: 4;
   display: flex;
   flex-direction: row;
-  border: 1px solid;
   border-radius: 5px;
 }
 
 #side-menu {
-  padding: 0px;
-  margin: 0px;
-  border-radius: 8px;
-  border: 4px solid;
-  display: flex 1;
+  padding: 10px 2px 5px 10px;
+  flex: 1;
 }
 
 #side-menu section {
-  background-color: rgba(128, 245, 126, 0.499);
-  padding: 15px;
-  margin: 0px;
-  border-radius: 5px;
+  background-color: #fbfbfb78;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid;
 }
 
 #side-menu h2 {
   margin: 10px;
   padding: 10px;
-  text-align: left;
-  color: rgba(11, 0, 228, 0.653);
-  text-decoration: underline;
+  color: rgba(0, 0, 2, 0.653);
   font-size: x-large;
 }
 
 .Email {
   padding: 10px;
-  color: rgb(0, 34, 255);
+  color: rgb(0, 0, 0);
   font-size: large;
-  text-decoration: underline;
 }
 .Email input {
-  border-radius: 8px;
-  border: 2px solid blue;
+  border-radius: 4px;
   margin-left: 5px;
 }
 
 .Name {
   padding: 10px;
-  color: rgb(0, 0, 255);
+  color: rgb(0, 0, 0);
   font-size: large;
-  text-decoration: underline;
 }
 
 .Name input {
-  border-radius: 8px;
-  border: 2px solid blue;
+  border-radius: 4px;
   margin-left: 5px;
 }
 
@@ -155,11 +135,17 @@ body {
   text-align: right;
 }
 #Contact-Us button {
-  color: rgb(0, 0, 255);
-  border: 2px solid;
+  color: rgb(0, 0, 0);
+
   border-radius: 8px;
-  font-size: medium;
-  background-color: rgba(0, 255, 38, 0.4);
+  height: 30px;
+  width: 80px;
+  background-color: rgb(255, 255, 255);
+}
+
+#light,
+.img {
+  height: 200px;
 }
 
 /* page */
@@ -172,49 +158,42 @@ body {
 }
 /* light */
 
-#light {
-  border-top: 1px solid red;
-  border-bottom: 1px solid red;
-  margin: 0;
-  padding: 0;
-}
-
 #TurnOn {
-  border: 1px solid rgb(0, 34, 255);
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 8px;
-  background-color: rgba(255, 0, 0, 0.685);
+  background-color: rgb(78, 77, 110);
   padding: 8px;
+  color: white;
 }
 
 #TurnOf {
   border: 1px solid rgb(251, 249, 249);
   border-radius: 8px;
   padding: 8px;
-  background-color: rgba(0, 15, 16, 0.685);
+  background-color: rgb(78, 77, 110);
   color: rgb(255, 255, 255);
 }
 
 /* main */
 
 #main {
-  margin: 0px;
-  padding: 0;
-  flex: 1;
-  background-color: rgba(2, 17, 112, 0.211);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  flex: 4;
   border: 1px solid black;
   border-radius: 5px;
   font-size: large;
 }
 
-#Home h2 {
+#home h2 {
   font-style: italic;
   text-decoration: underline;
   padding: 10px;
   margin-left: 30px;
-  color: rgb(0, 22, 144);
+  color: rgb(0, 0, 0);
 }
 
-#Home p {
+#home p {
   margin-left: 30px;
   font-style: italic;
 }
@@ -226,15 +205,15 @@ body {
   border: 1px solid;
   border-radius: 5px;
   text-align: center;
+  background-color: rgb(56, 149, 127);
 }
 
 .Footer a {
-  padding-right: 40px;
-  padding-left: 40px;
   transition: 0.5s;
   margin: 0;
+  padding-right: 60px;
+  display: inline-block;
 }
 .Footer a:hover {
-  padding: 15px;
   background-color: rgba(255, 255, 255, 0.32);
 }

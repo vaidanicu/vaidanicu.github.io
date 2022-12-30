@@ -15,32 +15,39 @@ ButtonTurnOn.addEventListener("click", function () {
 
 // switch page
 
+function hidePage(id) {
+  document.getElementById(id).style.display = "none";
+}
+function showPage(id) {
+  document.getElementById(id).style.display = "block";
+}
+
 function showHomePage() {
-  document.getElementById("home").style.display = "block";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("language").style.display = "none";
+  hidePage("skills");
+  hidePage("projects");
+  hidePage("language");
+  showPage("home");
 }
 
 function showskillsPage() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("skills").style.direction = "block";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("language").style.display = "none";
+  showPage("skills");
+  hidePage("projects");
+  hidePage("language");
+  hidePage("home");
 }
 
 function showProjectsPage() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("skills").style.display = "none";
-  document.getElementById("projects").style.display = "block";
-  document.getElementById("language").style.display = "none";
+  hidePage("skills");
+  showPage("projects");
+  hidePage("language");
+  hidePage("home");
 }
 
 function showLanguagePage() {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("skillss").style.display = "none";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("language").style.display = "block";
+  hidePage("skills");
+  hidePage("projects");
+  showPage("language");
+  hidePage("home");
 }
 
 showHomePage();

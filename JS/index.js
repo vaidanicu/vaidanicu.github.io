@@ -14,24 +14,9 @@ function hideAllPages() {
   hide("language");
 }
 
-function showHomePage() {
+function showPage(id) {
   hideAllPages();
-  show("home");
-}
-
-function showskillsPage() {
-  hideAllPages();
-  show("skills");
-}
-
-function showProjectsPage() {
-  hideAllPages();
-  show("projects");
-}
-
-function showLanguagePage() {
-  hideAllPages();
-  show("language");
+  show(id);
 }
 
 showHomePage();

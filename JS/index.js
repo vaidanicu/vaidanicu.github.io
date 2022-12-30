@@ -19,7 +19,7 @@ function showPage(id) {
   show(id);
 }
 
-showHomePage();
+showPage("home");
 
 // licht
 

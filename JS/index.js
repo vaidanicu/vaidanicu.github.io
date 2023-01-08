@@ -37,3 +37,19 @@ ButtonTurnOn.addEventListener("click", function () {
   TurnOnPhoto.style.display = "inline";
   TurnOfPhoto.style.display = "none";
 });
+
+// Time and Date
+
+let btnShow = document.querySelector("button");
+let output = document.querySelector("h4");
+
+btnShow.addEventListener("click", () => {
+  let today = new Date();
+
+  let month = today.getMonth() + 1;
+  let year = today.getFullYear();
+  let date = today.getDate();
+
+  let current_date = `${date}/${month}/${year}`;
+  output.innerText = current_date;
+});

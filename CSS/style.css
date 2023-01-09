@@ -44,6 +44,13 @@ body {
   color: blue;
 }
 
+#date {
+  margin: 20px;
+  font-size: larger;
+  text-decoration: underline;
+  color: blue;
+}
+
 #Job-Title a {
   color: black;
 }
@@ -176,13 +183,18 @@ body {
 #language {
   margin: 20px;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
 }
+
 #language table {
-  width: 600px;
-  height: 200px;
+  width: 50%;
+  min-width: 200px;
+  border-collapse: collapse;
 }
-#language td {
-  margin-left: 20px;
+
+#language th {
+  background-color: rgb(211, 245, 196);
+  padding: 5px;
 }
 
 /* light */

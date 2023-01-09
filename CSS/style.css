@@ -33,6 +33,17 @@ body {
   color: black;
 }
 
+#TimeAndDate {
+  width: 250px;
+}
+
+#clock {
+  margin: 20px;
+  font-size: larger;
+  text-decoration: underline;
+  color: blue;
+}
+
 #Job-Title a {
   color: black;
 }

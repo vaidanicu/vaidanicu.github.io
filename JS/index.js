@@ -39,14 +39,20 @@ ButtonTurnOn.addEventListener("click", function () {
 });
 
 // Time
+function displayTime() {
+  let t = new Date();
+  let hour = t.getHours();
+  let minutes = t.getMinutes();
+  let seconds = t.getSeconds();
 
-let t = new Date();
+  let current_time = `${hour}:${minutes}  ${seconds}`;
+  if (seconds > 60) {
+    seconds = -60;
+  }
 
-let hour = t.getHours();
-let minutes = t.getMinutes();
-
-let current_time = `${hour}:${minutes}`;
-document.getElementById("clock").innerHTML = current_time;
+  document.getElementById("clock").innerHTML = current_time;
+}
+setInterval(displayTime, 10);
 
 // Date
 
@@ -54,7 +60,6 @@ let date = new Date();
 let day = date.getDate();
 let month = date.getMonth() + 1;
 let year = date.getFullYear();
-
 let current_date = `${day}/${month}/${year}`;
 
 document.getElementById("date").innerHTML = current_date;

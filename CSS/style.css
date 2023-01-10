@@ -32,23 +32,20 @@ body {
 #header-info h1 {
   color: black;
 }
-
-#TimeAndDate {
-  width: 250px;
-}
+/* Time and Data */
 
 #clock {
   margin: 20px;
   font-size: larger;
   text-decoration: underline;
-  color: blue;
+  color: rgba(34, 255, 0, 0.612);
 }
 
 #date {
   margin: 20px;
   font-size: larger;
   text-decoration: underline;
-  color: blue;
+  color: rgba(34, 255, 0, 0.612);
 }
 
 #Job-Title a {

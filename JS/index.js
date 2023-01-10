@@ -41,16 +41,19 @@ ButtonTurnOn.addEventListener("click", function () {
 // Time
 function displayTime() {
   let t = new Date();
-  let hour = t.getHours();
-  let minutes = t.getMinutes();
-  let seconds = t.getSeconds();
+  let hour = addZero(t.getHours());
+  let minutes = addZero(t.getMinutes());
+  let seconds = addZero(t.getSeconds());
 
-  let current_time = `${hour}:${minutes}  ${seconds}`;
-  if (seconds > 60) {
-    seconds = -60;
-  }
-
+  let current_time = `${hour}:${minutes}:${seconds}`;
   document.getElementById("clock").innerHTML = current_time;
+}
+
+function addZero(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
 }
 setInterval(displayTime, 10);
 

@@ -58,11 +58,21 @@ function addZero(i) {
 setInterval(displayTime, 10);
 
 // Date
+function Showdate() {
+  let date = new Date();
+  let day = addZeroDate(date.getDate());
+  let month = addZeroDate(date.getMonth() + 1);
+  let year = addZeroDate(date.getFullYear());
+  let current_date = `${day}/${month}/${year}`;
 
-let date = new Date();
-let day = date.getDate();
-let month = date.getMonth() + 1;
-let year = date.getFullYear();
-let current_date = `${day}/${month}/${year}`;
+  document.getElementById("date").innerHTML = current_date;
 
-document.getElementById("date").innerHTML = current_date;
+  function addZeroDate(i) {
+    if (i < 10) {
+      i = "0" + i;
+    }
+    return i;
+  }
+}
+
+setInterval(Showdate, 10);

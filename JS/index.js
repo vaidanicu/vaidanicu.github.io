@@ -55,7 +55,7 @@ function addZero(i) {
   }
   return i;
 }
-setInterval(displayTime, 10);
+setInterval(displayTime, 1000);
 
 // Date
 function Showdate() {
@@ -75,4 +75,4 @@ function Showdate() {
   }
 }
 
-setInterval(Showdate, 10);
+setInterval(Showdate);

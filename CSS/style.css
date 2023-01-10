@@ -158,6 +158,27 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+/* light */
+
+#TurnOnPhoto {
+  display: none;
+}
+#TurnOn {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  background-color: rgb(78, 77, 110);
+  padding: 8px;
+  color: white;
+}
+
+#TurnOf {
+  border: 1px solid rgb(251, 249, 249);
+  border-radius: 8px;
+  padding: 8px;
+  background-color: rgb(78, 77, 110);
+  color: rgb(255, 255, 255);
+}
+
 /* page */
 
 .page {
@@ -192,27 +213,6 @@ body {
 #language th {
   background-color: rgb(211, 245, 196);
   padding: 5px;
-}
-
-/* light */
-
-#TurnOnPhoto {
-  display: none;
-}
-#TurnOn {
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 8px;
-  background-color: rgb(78, 77, 110);
-  padding: 8px;
-  color: white;
-}
-
-#TurnOf {
-  border: 1px solid rgb(251, 249, 249);
-  border-radius: 8px;
-  padding: 8px;
-  background-color: rgb(78, 77, 110);
-  color: rgb(255, 255, 255);
 }
 
 /* main */

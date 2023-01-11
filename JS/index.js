@@ -74,5 +74,4 @@ function Showdate() {
     return i;
   }
 }
-
-setInterval(Showdate);
+setInterval(Showdate, 3000);

@@ -150,8 +150,9 @@ body {
   text-align: right;
 }
 #Contact-Us button {
+  background-color: red;
   color: rgb(0, 0, 0);
-
+  transition: 0.5s;
   border-radius: 8px;
   height: 30px;
   width: 80px;
@@ -242,7 +243,6 @@ body {
 /* footer */
 
 .Footer {
-  padding: 10px;
   border: 1px solid;
   border-radius: 5px;
   text-align: center;
@@ -252,9 +252,14 @@ body {
 .Footer a {
   transition: 0.5s;
   margin: 0;
-  padding-right: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
   display: inline-block;
 }
 .Footer a:hover {
   background-color: rgba(255, 255, 255, 0.32);
+  display: inline-block;
+  margin: 0;
 }

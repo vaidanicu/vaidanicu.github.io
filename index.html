@@ -29,10 +29,13 @@
       </div>
 
       <ul id="top-menu-bar">
-        <li><a href="#" onclick="showPage('home')">Home</a></li>
-        <li><a href="#" onclick="showPage('skills')">Skills</a></li>
-        <li><a href="#" onclick="showPage('projects')">Projects</a></li>
-        <li><a href="#" onclick="showPage('language')">Language</a></li>
+        <li><a href="#" onclick="displayPage('home')">HOME</a></li>
+        <li><a href="#" onclick="displayPage('skills')">Skills</a></li>
+        <li>
+          <a href="#" onclick="displayPage('languages')">Known Languages</a>
+        </li>
+        <li><a href="#" onclick="displayPage('projects')">Projects</a></li>
+        <li><a href="#" onclick="displayPage('rubik')">Rubik</a></li>
       </ul>
     </header>
     <section id="content">
@@ -84,12 +87,8 @@
 
         <div id="skills" class="page">
           <h2>Skills</h2>
-          <ul id="skills-list">
-            <li class="favorit">html</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Git</li>
-          </ul>
+
+          <ul id="skills-list"></ul>
         </div>
 
         <div id="projects" class="page">
@@ -106,7 +105,7 @@
           <li><a href="#">PomVerde</a></li>
         </div>
 
-        <div id="language" class="page">
+        <div id="languages" class="page">
           <h2>Known Language</h2>
           <table border="1">
             <tr>
@@ -127,6 +126,7 @@
             </tr>
           </table>
         </div>
+        <div id="rubik" class="page"></div>
       </div>
     </section>
 

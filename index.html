@@ -11,30 +11,32 @@
   <body>
     <header>
       <div id="header-wrapper">
-        <div id="my-pictures">
+        <div>
           <img id="photo" src="/Pictures/cv.jpg" width="150px" alt="Aurel" />
         </div>
         <div id="header-info">
           <h1>Vaida Aurel Nicolae</h1>
-          <h2 id="Job-Title">
-            <a target="_blank" href="https://fasttrackit.org/">
-              Student: FastrackIt</a
-            >
+          <h2>
+            Student:
+            <a target="_blank" href="https://fasttrackit.org/"> FastrackIt</a>
           </h2>
         </div>
         <section>
-          <div id="clock"></div>
-          <div id="date"></div>
+          <div id="TimeAndDate">
+            <div id="clock"></div>
+            <div id="date"></div>
+          </div>
         </section>
       </div>
 
       <ul id="top-menu-bar">
         <li><a href="#" onclick="displayPage('home')">HOME</a></li>
         <li><a href="#" onclick="displayPage('skills')">Skills</a></li>
+
+        <li><a href="#" onclick="displayPage('projects')">Projects</a></li>
         <li>
           <a href="#" onclick="displayPage('languages')">Known Languages</a>
         </li>
-        <li><a href="#" onclick="displayPage('projects')">Projects</a></li>
         <li><a href="#" onclick="displayPage('rubik')">Rubik</a></li>
       </ul>
     </header>
@@ -43,7 +45,7 @@
         <section>
           <h2>Contact Form</h2>
           <form action id="sectione-left-menu">
-            <div class="Email">
+            <div id="Email">
               <label for="e">Email: </label>
               <input
                 type="email"
@@ -53,14 +55,14 @@
                 placeholder="example@yahoo.com"
               />
             </div>
-            <div class="Name">
+            <div id="UserName">
               <label for="n"> Name: </label>
               <input
                 type="text"
                 id="Name"
                 name="na"
                 required
-                placeholder="Name"
+                placeholder="Full Name"
               />
             </div>
 
@@ -82,12 +84,16 @@
       <div id="main">
         <div id="home" class="page">
           <h2>Home</h2>
-          <p>About Me</p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
+            quos quas dolor tempore architecto reiciendis distinctio, sit,
+            praesentium iure, optio explicabo quam voluptatum libero! Laboriosam
+            expedita error omnis magnam minima.
+          </p>
         </div>
 
         <div id="skills" class="page">
           <h2>Skills</h2>
-
           <ul id="skills-list"></ul>
         </div>
 

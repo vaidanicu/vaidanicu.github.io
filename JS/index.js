@@ -33,7 +33,7 @@ function displayPage(id) {
 
 displayPage("home");
 
-// licht
+// light
 
 document.querySelector("#TurnOn").addEventListener("click", function () {
   document.querySelector("#TurnOnPhoto").style.display = "inline";

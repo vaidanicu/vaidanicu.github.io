@@ -35,19 +35,14 @@ displayPage("home");
 
 // licht
 
-var ButtonTurnOn = document.getElementById("TurnOn");
-var TurnOnPhoto = document.getElementById("TurnOnPhoto");
-var ButtonTurnOff = document.getElementById("TurnOf");
-var TurnOfPhoto = document.getElementById("TurnOfPhoto");
-
-ButtonTurnOff.addEventListener("click", function () {
-  TurnOfPhoto.style.display = "inline";
-  TurnOnPhoto.style.display = "none";
+document.querySelector("#TurnOn").addEventListener("click", function () {
+  document.querySelector("#TurnOnPhoto").style.display = "inline";
+  document.querySelector("#TurnOfPhoto").style.display = "none";
 });
 
-ButtonTurnOn.addEventListener("click", function () {
-  TurnOnPhoto.style.display = "inline";
-  TurnOfPhoto.style.display = "none";
+document.querySelector("#TurnOf").addEventListener("click", function () {
+  document.querySelector("#TurnOnPhoto").style.display = "none";
+  document.querySelector("#TurnOfPhoto").style.display = "inline";
 });
 
 // Time

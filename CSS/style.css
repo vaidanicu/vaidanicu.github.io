@@ -38,7 +38,8 @@ body {
 #photo {
   border-radius: 50%;
   border: 3px solid rgb(253, 253, 253);
-  width: 100px;
+
+  height: 100px;
 }
 /* Time and Data */
 
@@ -62,8 +63,8 @@ body {
 }
 
 #top-menu-bar li {
-  text-align: right;
-  display: inline-block;
+  text-align: ce;
+  display: contents;
   margin: 1px;
   padding: 1px;
   width: 240px;
@@ -75,14 +76,13 @@ body {
   text-align: center;
   padding: 12px;
   transition: 0.5s;
-  display: block;
+  display: inline-block;
   margin: 0;
 }
 
 #top-menu-bar a:hover {
   color: rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.32);
-  display: block;
 }
 
 /* content */
@@ -138,6 +138,13 @@ body {
   border-radius: 8px;
   height: 30px;
   width: 80px;
+  display: inline-block;
+}
+
+#Contact-Us button a:hover {
+  display: inline-block;
+  margin: 0;
+  background-color: green;
 }
 
 /* light */

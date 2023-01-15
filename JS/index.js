@@ -12,18 +12,18 @@ for (var i = 0; i < skills.length; i++) {
 
 skillsEl.innerHTML = skillsHTML;
 
-function hideAllPages() {
-  var pages = document.querySelectorAll(".page");
-  pages.forEach(function (page) {
-    hide(page.id);
-  });
-}
-
 function show(id) {
   document.getElementById(id).style.display = "block";
 }
 function hide(id) {
   document.getElementById(id).style.display = "none";
+}
+
+function hideAllPages() {
+  var pages = document.querySelectorAll(".page");
+  pages.forEach(function (page) {
+    hide(page.id);
+  });
 }
 
 function displayPage(id) {
@@ -62,10 +62,12 @@ function addZero(i) {
   }
   return i;
 }
+
+displayTime();
 setInterval(displayTime, 1000);
 
 // Date
-function Showdate() {
+function DisplayDate() {
   let date = new Date();
   let day = addZeroDate(date.getDate());
   let month = addZeroDate(date.getMonth() + 1);
@@ -81,4 +83,5 @@ function Showdate() {
     return i;
   }
 }
+DisplayDate();
 setInterval(Showdate, 3000);

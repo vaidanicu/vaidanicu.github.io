@@ -84,4 +84,5 @@ function DisplayDate() {
   }
 }
 DisplayDate();
-setInterval(Showdate, 3000);
+
+setInterval(DisplayDate, 3000);

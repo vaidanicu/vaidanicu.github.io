@@ -34,17 +34,18 @@ function displayPage(id) {
 displayPage("home");
 
 // light
+function displayLight() {
+  document.querySelector("#TurnOn").addEventListener("click", function () {
+    document.querySelector("#TurnOnPhoto").style.display = "inline";
+    document.querySelector("#TurnOfPhoto").style.display = "none";
+  });
 
-document.querySelector("#TurnOn").addEventListener("click", function () {
-  document.querySelector("#TurnOnPhoto").style.display = "inline";
-  document.querySelector("#TurnOfPhoto").style.display = "none";
-});
-
-document.querySelector("#TurnOf").addEventListener("click", function () {
-  document.querySelector("#TurnOnPhoto").style.display = "none";
-  document.querySelector("#TurnOfPhoto").style.display = "inline";
-});
-
+  document.querySelector("#TurnOf").addEventListener("click", function () {
+    document.querySelector("#TurnOnPhoto").style.display = "none";
+    document.querySelector("#TurnOfPhoto").style.display = "inline";
+  });
+}
+displayLight();
 // Time
 function displayTime() {
   let t = new Date();

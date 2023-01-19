@@ -23,6 +23,16 @@ body {
   margin: 0;
   height: 120px;
 }
+
+#header-wrapper h1 {
+  margin: 0px;
+}
+
+#header-wrapper img {
+  border-radius: 50%;
+  border: 3px solid rgb(253, 253, 253);
+  width: 100px;
+}
 #header-info {
   flex: 1;
   padding: 0px;
@@ -35,12 +45,6 @@ body {
   color: rgba(79, 2, 2, 0.611);
 }
 
-#photo {
-  border-radius: 50%;
-  border: 3px solid rgb(253, 253, 253);
-
-  height: 100px;
-}
 /* Time and Data */
 
 #TimeAndDate {

@@ -2,7 +2,7 @@
 
 var skillsEl = document.getElementById("skills-list");
 
-var skills = ["HTML", "CSS", "JS", "Drive"];
+var skills = ["HTML", "CSS", "JS"];
 
 var skillsHTML = "";
 
@@ -30,6 +30,19 @@ function displayPage(id) {
   hideAllPages();
   show(id);
 }
+
+function initMenu() {
+  document
+    .getElementById("top-menu-bar")
+    .addEventListener("click", function (e) {
+      if (e.target.matches("a")) {
+        // var id = e.target.getAttribute("data-page");
+        var id = e.target.dataset.page;
+        displayPage(id);
+      }
+    });
+}
+initMenu();
 
 displayPage("home");
 

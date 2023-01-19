@@ -205,6 +205,13 @@ body {
 #skills-list {
   margin: 10px;
 }
+#skills-list li {
+  font-weight: bold;
+}
+#skills-list span {
+  color: red;
+  font-weight: 200;
+}
 
 #projects {
   margin: 20px;

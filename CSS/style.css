@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   margin: 0;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: rgba(235, 232, 228, 0.225);
 }
 
 /* header-wrapper */
@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgb(56, 149, 127);
+  background: linear-gradient(45deg, rgb(47, 125, 107), transparent);
   padding: 0px;
   margin: 0;
   height: 120px;
@@ -33,6 +33,7 @@ body {
   border: 3px solid rgb(253, 253, 253);
   width: 100px;
 }
+
 #header-info {
   flex: 1;
   padding: 0px;
@@ -41,8 +42,9 @@ body {
   color: black;
   margin: 10px;
 }
+
 #header-info a {
-  color: rgba(79, 2, 2, 0.611);
+  color: rgba(0, 0, 0, 0.611);
 }
 
 /* Time and Data */
@@ -51,14 +53,14 @@ body {
   margin: 20px;
   font-size: larger;
   text-decoration: underline;
-  color: rgba(34, 255, 0, 0.612);
+  color: rgba(0, 0, 0, 0.612);
 }
 
 /* top-menu-bar */
 
 #top-menu-bar {
   text-align: center;
-  background-color: rgb(47, 125, 107);
+  background: linear-gradient(45deg, rgb(47, 125, 107), transparent);
   margin: 0px;
   padding: 0;
   height: 50px;
@@ -67,7 +69,7 @@ body {
 }
 
 #top-menu-bar li {
-  text-align: ce;
+  text-align: center;
   display: contents;
   margin: 1px;
   padding: 1px;
@@ -76,8 +78,7 @@ body {
 
 #top-menu-bar a {
   text-decoration: none;
-  color: white;
-  text-align: center;
+  color: rgb(6, 6, 6);
   padding: 12px;
   transition: 0.5s;
   display: inline-block;
@@ -165,6 +166,14 @@ body {
   color: white;
 }
 
+#Views p {
+  text-align: center;
+}
+
+#count {
+  text-align: center;
+}
+
 /* page */
 #main {
   margin-top: 15px;
@@ -209,7 +218,7 @@ body {
   font-weight: bold;
 }
 #skills-list span {
-  color: red;
+  color: rgb(30, 11, 92);
   font-weight: 200;
 }
 
@@ -240,7 +249,7 @@ body {
   border: 1px solid;
   border-radius: 5px;
   text-align: center;
-  background-color: rgb(56, 149, 127);
+  background: linear-gradient(45deg, rgb(47, 125, 107), transparent);
 }
 
 .Footer a {

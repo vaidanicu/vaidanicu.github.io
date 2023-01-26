@@ -2,18 +2,22 @@
 
 var skillsEl = document.getElementById("skills-list");
 
-var skills = [
-  { name: "HTML", endorcements: 5 },
-  { name: "CSS", endorcements: 4 },
-  { name: "JS", endorcements: 3 },
-  { name: "Drive", endorcements: 2 },
-];
+var r1 = fetch("/JS/skills.json");
+r1.then(function (raspuns) {
+  var r2 = raspuns.json();
 
-var skillsHTML = skills.map(function (skill) {
-  return `<li>${skill.name} - <span>${skill.endorcements}</span></li>`;
+  r2.then(function (skills) {
+    displaySkills(skills);
+  });
 });
 
-skillsEl.innerHTML = skillsHTML.join("");
+function displaySkills(skills) {
+  var skillsHTML = skills.map(function (skill) {
+    return `<li>${skill.name} - <span>${skill.endorcements}</span></li>`;
+  });
+
+  skillsEl.innerHTML = skillsHTML.join("");
+}
 
 function show(id) {
   document.getElementById(id).style.display = "block";

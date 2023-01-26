@@ -1,16 +1,16 @@
 // switch page
 
 const r1 = fetch("/JS/skills.json");
-r1.then(function (raspuns) {
+r1.then((raspuns) => {
   const r2 = raspuns.json();
 
-  r2.then(function (skills) {
+  r2.then((skills) => {
     displaySkills(skills);
   });
 });
 
 function displaySkills(skills) {
-  const skillsHTML = skills.map(function (skill) {
+  const skillsHTML = skills.map((skill) => {
     return `<li>${skill.name} - <span>${skill.endorcements}</span></li>`;
   });
   const skillsEl = document.getElementById("skills-list");
@@ -27,7 +27,7 @@ function hide(id) {
 
 function hideAllPages() {
   const pages = document.querySelectorAll(".page");
-  pages.forEach(function (page) {
+  pages.forEach((page) => {
     hide(page.id);
   });
 }
@@ -38,15 +38,13 @@ function displayPage(id) {
 }
 
 function initMenu() {
-  document
-    .getElementById("top-menu-bar")
-    .addEventListener("click", function (e) {
-      if (e.target.matches("a")) {
-        // var id = e.target.getAttribute("data-page");
-        const id = e.target.dataset.page;
-        displayPage(id);
-      }
-    });
+  document.getElementById("top-menu-bar").addEventListener("click", (e) => {
+    if (e.target.matches("a")) {
+      // var id = e.target.getAttribute("data-page");
+      const id = e.target.dataset.page;
+      displayPage(id);
+    }
+  });
 }
 initMenu();
 
@@ -106,6 +104,13 @@ function DisplayDate() {
 DisplayDate();
 
 setInterval(DisplayDate, 3000);
+
+const functionVariable1 = function () {
+  return "arrow";
+};
+const functionVariable2 = () => {
+  return "arrow";
+};
 
 const countEl = document.getElementById("count");
 

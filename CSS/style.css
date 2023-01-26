@@ -139,17 +139,15 @@ body {
   text-align: right;
 }
 #Contact-Us button {
-  transition: 0.5s;
   border-radius: 8px;
   height: 30px;
   width: 80px;
-  display: inline-block;
+  cursor: pointer;
+  padding: 0;
 }
 
-#Contact-Us button a:hover {
-  display: inline-block;
-  margin: 0;
-  background-color: green;
+#Contact-Us button:hover {
+  background-color: #14014c8a;
 }
 
 /* light */
@@ -161,11 +159,14 @@ body {
 #light button {
   border: 1px solid rgb(0, 0, 0);
   border-radius: 8px;
-  background-color: rgb(78, 77, 110);
+
   padding: 8px;
-  color: white;
+  color: rgb(10, 10, 10);
 }
 
+#light button:hover {
+  background-color: #14014c8a;
+}
 #Views p {
   text-align: center;
 }

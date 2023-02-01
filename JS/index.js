@@ -105,9 +105,17 @@ DisplayDate();
 
 setInterval(DisplayDate, 3000);
 
-const functionVariable1 = function () {
-  return "arrow";
-};
-const functionVariable2 = () => {
-  return "arrow";
-};
+function DisplayToDay() {
+  let day = new Date();
+  let today = day.get.day();
+  document.getElementById("ToDay").innerHTML = "Today is " + day;
+}
+
+DisplayToDay();
+
+// const functionVariable1 = function () {
+//   return "arrow";
+// };
+// const functionVariable2 = () => {
+//   return "arrow";
+// };

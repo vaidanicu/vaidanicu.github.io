@@ -1,4 +1,7 @@
 // switch page
+var myName = prompt("What is your name?");
+
+alert("Welcome to my site " + myName);
 
 const r1 = fetch("/JS/skills.json");
 r1.then((raspuns) => {
@@ -104,14 +107,6 @@ function DisplayDate() {
 DisplayDate();
 
 setInterval(DisplayDate, 3000);
-
-function DisplayToDay() {
-  let day = new Date();
-  let today = day.get.day();
-  document.getElementById("ToDay").innerHTML = "Today is " + day;
-}
-
-DisplayToDay();
 
 // const functionVariable1 = function () {
 //   return "arrow";

@@ -1,7 +1,4 @@
 // switch page
-var myName = prompt("What is your name?");
-
-alert("Welcome to my site " + myName);
 
 const r1 = fetch("/JS/skills.json");
 r1.then((raspuns) => {
@@ -51,7 +48,7 @@ function initMenu() {
 }
 initMenu();
 
-displayPage("skills");
+displayPage("home");
 
 // light
 function displayLight() {

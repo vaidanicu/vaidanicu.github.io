@@ -104,10 +104,3 @@ function DisplayDate() {
 DisplayDate();
 
 setInterval(DisplayDate, 3000);
-
-// const functionVariable1 = function () {
-//   return "arrow";
-// };
-// const functionVariable2 = () => {
-//   return "arrow";
-// };

@@ -1,8 +1,7 @@
-# vaidanicu.github.io
+### My personal Cv
 
-TODO
+This is my CV created with HTML,CSS and JavaScript
 
-[ ]-button menu for phone
+## Live
 
-
-[ ]-@media screen for phone
+https://vaidanicu.github.io/

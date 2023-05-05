@@ -1,6 +1,6 @@
 // switch page
 
-const r1 = fetch("/JS/skills.json");
+const r1 = fetch("skills.json");
 r1.then((raspuns) => {
   const r2 = raspuns.json();
 

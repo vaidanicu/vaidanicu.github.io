@@ -1,16 +1,16 @@
 // switch page
 
 const r1 = fetch("skills.json");
-r1.then((raspuns) => {
+r1.then(raspuns => {
   const r2 = raspuns.json();
 
-  r2.then((skills) => {
+  r2.then(skills => {
     displaySkills(skills);
   });
 });
 
 function displaySkills(skills) {
-  const skillsHTML = skills.map((skill) => {
+  const skillsHTML = skills.map(skill => {
     return `<li>${skill.name} - <span>${skill.endorcements}</span></li>`;
   });
   const skillsEl = document.getElementById("skills-list");
@@ -27,7 +27,7 @@ function hide(id) {
 
 function hideAllPages() {
   const pages = document.querySelectorAll(".page");
-  pages.forEach((page) => {
+  pages.forEach(page => {
     hide(page.id);
   });
 }
@@ -38,7 +38,7 @@ function displayPage(id) {
 }
 
 function initMenu() {
-  document.getElementById("top-menu-bar").addEventListener("click", (e) => {
+  document.getElementById("top-menu-bar").addEventListener("click", e => {
     if (e.target.matches("a")) {
       // var id = e.target.getAttribute("data-page");
       const id = e.target.dataset.page;
@@ -50,57 +50,44 @@ initMenu();
 
 displayPage("home");
 
-// light
-function displayLight() {
-  document.querySelector("#TurnOn").addEventListener("click", function () {
-    document.querySelector("#TurnOnPhoto").style.display = "inline";
-    document.querySelector("#TurnOfPhoto").style.display = "none";
-  });
-
-  document.querySelector("#TurnOf").addEventListener("click", function () {
-    document.querySelector("#TurnOnPhoto").style.display = "none";
-    document.querySelector("#TurnOfPhoto").style.display = "inline";
-  });
-}
-displayLight();
 // Time
-function displayTime() {
-  let t = new Date();
-  let hour = addZero(t.getHours());
-  let minutes = addZero(t.getMinutes());
-  let seconds = addZero(t.getSeconds());
+// function displayTime() {
+//   let t = new Date();
+//   let hour = addZero(t.getHours());
+//   let minutes = addZero(t.getMinutes());
+//   let seconds = addZero(t.getSeconds());
 
-  let current_time = `${hour}:${minutes}:${seconds}`;
-  document.getElementById("clock").innerHTML = current_time;
-}
+//   let current_time = `${hour}:${minutes}:${seconds}`;
+//   document.getElementById("clock").innerHTML = current_time;
+// }
 
-function addZero(i) {
-  if (i < 10) {
-    i = "0" + i;
-  }
-  return i;
-}
+// function addZero(i) {
+//   if (i < 10) {
+//     i = "0" + i;
+//   }
+//   return i;
+// }
 
-displayTime();
-setInterval(displayTime, 1000);
+// displayTime();
+// setInterval(displayTime, 1000);
 
 // Date
-function DisplayDate() {
-  let date = new Date();
-  let day = addZeroDate(date.getDate());
-  let month = addZeroDate(date.getMonth() + 1);
-  let year = addZeroDate(date.getFullYear());
-  let current_date = `${day}/${month}/${year}`;
+// function DisplayDate() {
+//   let date = new Date();
+//   let day = addZeroDate(date.getDate());
+//   let month = addZeroDate(date.getMonth() + 1);
+//   let year = addZeroDate(date.getFullYear());
+//   let current_date = `${day}/${month}/${year}`;
 
-  document.getElementById("date").innerHTML = current_date;
+//   document.getElementById("date").innerHTML = current_date;
 
-  function addZeroDate(i) {
-    if (i < 10) {
-      i = "0" + i;
-    }
-    return i;
-  }
-}
-DisplayDate();
+//   function addZeroDate(i) {
+//     if (i < 10) {
+//       i = "0" + i;
+//     }
+//     return i;
+//   }
+// }
+// DisplayDate();
 
-setInterval(DisplayDate, 3000);
+// setInterval(DisplayDate, 3000);

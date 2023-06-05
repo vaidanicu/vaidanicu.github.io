@@ -1,8 +1,8 @@
-Vaida's CV
+# Vaida's CV
 
 My personal Cv made with HTML, CSS and JS
 
-## Live pREVIEW
+## 🎞️ Live Preview
 
 https://vaidanicu.github.io/
 

@@ -8,13 +8,46 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgb(0, 200, 240) 0%,
-    rgb(8, 8, 102) 35%,
-    rgb(3, 93, 111) 100%
-  );
+  background-image: url("https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg");
+  background-size: cover;
+  -webkit-animation: slidein 100s;
+  animation: slidein 100s;
+
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200");
+
+body {
+}
+
+@-webkit-keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 2000px;
+  }
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
 }
 
 /* header-wrapper */
@@ -65,7 +98,7 @@ body {
   padding: 0;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 2px;
-  background-color: #144272;
+  background-color: #1441722f;
 }
 
 #top-menu-bar li {
@@ -105,13 +138,13 @@ body {
 }
 
 #side-menu h2 {
-  color: rgb(161, 5, 5);
+  color: rgb(245, 244, 244);
 }
 
 #side-menu section {
   padding: 10px;
   margin: 5px;
-  border: 2px solid rgba(107, 74, 15, 0.967);
+  border: 2px solid rgba(246, 246, 246, 0.967);
   border-radius: 20px;
 }
 
@@ -123,7 +156,7 @@ body {
 
 #sectione-left-menu label {
   padding: 10px;
-  color: rgb(250, 2, 2);
+  color: rgb(246, 246, 246);
   font-size: 20;
 }
 
@@ -142,10 +175,10 @@ body {
   cursor: pointer;
   height: 35px;
   width: 112px;
-  border: 2px solid red;
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 20px;
   background: none;
-  color: red;
+  color: rgb(255, 255, 255);
   font-size: large;
 }
 
@@ -178,7 +211,7 @@ body {
 
 #home p {
   margin: 5px;
-  color: rgb(174, 255, 164);
+  color: rgb(249, 249, 249);
 }
 
 #skills h2 {
@@ -231,7 +264,7 @@ body {
   border: 1px solid;
   border-radius: 5px;
   text-align: center;
-  background-color: #144272;
+  background-color: #1441722f;
 }
 
 .Footer a {

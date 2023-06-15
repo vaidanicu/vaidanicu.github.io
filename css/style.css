@@ -8,9 +8,13 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  border-radius: 5px;
-  background: url("Pictures/hot-air-balloon-gc5ae3774d_1280.jpg") no-repeat center center fixed;
-  background-size: cover;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(0, 200, 240) 0%,
+    rgb(8, 8, 102) 35%,
+    rgb(3, 93, 111) 100%
+  );
 }
 
 /* header-wrapper */
@@ -19,14 +23,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-
   padding: 0px;
   margin: 0;
-  height: 120px;
-}
-
-#header-wrapper h1 {
-  margin: 0px;
 }
 
 #header-wrapper img {
@@ -67,6 +65,7 @@ body {
   padding: 0;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 2px;
+  background-color: #144272;
 }
 
 #top-menu-bar li {
@@ -232,6 +231,7 @@ body {
   border: 1px solid;
   border-radius: 5px;
   text-align: center;
+  background-color: #144272;
 }
 
 .Footer a {

@@ -1,16 +1,16 @@
 // switch page
 
-const r1 = fetch("skills.json");
-r1.then(raspuns => {
+const r1 = fetch("data/skills.json");
+r1.then((raspuns) => {
   const r2 = raspuns.json();
 
-  r2.then(skills => {
+  r2.then((skills) => {
     displaySkills(skills);
   });
 });
 
 function displaySkills(skills) {
-  const skillsHTML = skills.map(skill => {
+  const skillsHTML = skills.map((skill) => {
     return `<li>${skill.name} - <span>${skill.endorcements}</span></li>`;
   });
   const skillsEl = document.getElementById("skills-list");
@@ -27,7 +27,7 @@ function hide(id) {
 
 function hideAllPages() {
   const pages = document.querySelectorAll(".page");
-  pages.forEach(page => {
+  pages.forEach((page) => {
     hide(page.id);
   });
 }
@@ -38,7 +38,7 @@ function displayPage(id) {
 }
 
 function initMenu() {
-  document.getElementById("top-menu-bar").addEventListener("click", e => {
+  document.getElementById("top-menu-bar").addEventListener("click", (e) => {
     if (e.target.matches("a")) {
       // var id = e.target.getAttribute("data-page");
       const id = e.target.dataset.page;

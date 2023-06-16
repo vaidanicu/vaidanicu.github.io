@@ -6,4 +6,4 @@ My personal Cv made with HTML, CSS and JS
 
 https://vaidanicu.github.io/
 
-![image](https://github.com/vaidanicu/vaidanicu.github.io/assets/64326133/8526c041-f1b5-4f83-b50c-e875fd6316a1)
+![image](https://github.com/vaidanicu/vaidanicu.github.io/assets/64326133/64fd7f7c-bd38-480c-b594-6522f9757f82) 

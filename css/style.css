@@ -25,9 +25,6 @@ body {
 
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200");
 
-body {
-}
-
 @-webkit-keyframes slidein {
   from {
     background-position: top;
@@ -66,6 +63,11 @@ body {
   width: 90px;
   box-shadow: 0px 0px 10px 10px gray;
   margin: 10px;
+  transition: 0.5;
+}
+#header-wrapper img:hover {
+  border-radius: 50% 25px;
+  border-color: #0798ab;
 }
 
 #header-info {
@@ -79,15 +81,6 @@ body {
 
 #header-info a {
   color: rgba(255, 255, 255, 0.611);
-}
-
-/* Time and Data */
-
-#TimeAndDate {
-  margin: 20px;
-  font-size: larger;
-  text-decoration: underline;
-  color: rgba(0, 0, 0, 0.612);
 }
 
 /* top-menu-bar */

@@ -16,3 +16,7 @@ https://vaidanicu.github.io/
 # Developers TODOs (items to improve)
 
 - [x] Change text color
+
+# ToDo
+
+[] change text color

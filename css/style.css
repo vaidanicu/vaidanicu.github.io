@@ -67,7 +67,7 @@ body {
 }
 #header-wrapper img:hover {
   border-radius: 50% 25px;
-  border-color: #0798ab;
+  border-color: #193f44;
 }
 
 #header-info {
@@ -75,12 +75,12 @@ body {
   padding: 0px;
   margin: 0;
   font-size: small;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   margin: 10px;
 }
 
 #header-info a {
-  color: rgba(255, 255, 255, 0.611);
+  color: rgba(2, 2, 2, 0.611);
 }
 
 /* top-menu-bar */
@@ -91,7 +91,7 @@ body {
   padding: 0;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 2px;
-  background-color: #1441722f;
+  background-color: #0a244084;
 }
 
 #top-menu-bar li {
@@ -104,7 +104,7 @@ body {
 
 #top-menu-bar a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   padding: 12px;
   transition: 0.5s;
   display: inline-block;
@@ -131,13 +131,13 @@ body {
 }
 
 #side-menu h2 {
-  color: rgb(245, 244, 244);
+  color: rgb(0, 0, 0);
 }
 
 #side-menu section {
   padding: 10px;
   margin: 5px;
-  border: 2px solid rgba(246, 246, 246, 0.967);
+  border: 2px solid rgba(0, 0, 0, 0.967);
   border-radius: 20px;
 }
 
@@ -149,8 +149,8 @@ body {
 
 #sectione-left-menu label {
   padding: 10px;
-  color: rgb(246, 246, 246);
-  font-size: 20;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
 }
 
 #sectione-left-menu input {
@@ -168,10 +168,10 @@ body {
   cursor: pointer;
   height: 35px;
   width: 112px;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid rgb(3, 3, 3);
   border-radius: 20px;
   background: none;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: large;
 }
 
@@ -191,7 +191,7 @@ body {
 
 .page {
   display: none;
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
   border-radius: 0.5rem;
   margin-bottom: 1.6rem;
 }
@@ -204,7 +204,7 @@ body {
 
 #home p {
   margin: 5px;
-  color: rgb(249, 249, 249);
+  color: rgb(6, 6, 6);
 }
 
 #skills h2 {
@@ -213,22 +213,23 @@ body {
 
 #skills-list {
   margin: 10px;
-  color: rgb(174, 255, 164);
+  color: rgb(0, 0, 0);
 }
 
 #skills-list span {
-  color: rgb(249, 86, 5);
-  font-weight: 200;
+  color: rgb(0, 0, 0);
+  font-weight: 200px;
 }
 
 #projects {
   margin: 20px;
   text-decoration: none;
+  margin-left: 60px;
 }
 
 #projects a {
   text-decoration: none;
-  color: rgb(174, 255, 164);
+  color: rgb(6, 6, 6);
 }
 
 #languages {
@@ -244,7 +245,7 @@ body {
   width: 900px;
   height: 300px;
   border-collapse: collapse;
-  background-color: rgba(43, 0, 255, 0.258);
+  background-color: rgba(250, 249, 252, 0.103);
 }
 
 #languages td {
@@ -257,7 +258,7 @@ body {
   border: 1px solid;
   border-radius: 5px;
   text-align: center;
-  background-color: #1441722f;
+  background-color: #0a244084;
 }
 
 .Footer a {

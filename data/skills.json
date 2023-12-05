@@ -1,5 +1,6 @@
 [
   { "name": "HTML", "endorcements": 5 },
   { "name": "CSS", "endorcements": 4 },
-  { "name": "JS", "endorcements": 3 }
+  { "name": "JS", "endorcements": 3 },
+  { "name": "Wordpress", "endorcements": 2 }
 ]

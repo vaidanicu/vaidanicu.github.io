@@ -8,43 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  background-image: url("https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg");
-  background-size: cover;
-  -webkit-animation: slidein 100s;
-  animation: slidein 100s;
-
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-}
-
-@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200");
-
-@-webkit-keyframes slidein {
-  from {
-    background-position: top;
-    background-size: 3000px;
-  }
-  to {
-    background-position: -100px 0px;
-    background-size: 2750px;
-  }
-}
-
-@keyframes slidein {
-  from {
-    background-position: top;
-    background-size: 2000px;
-  }
-  to {
-    background-position: -100px 0px;
-    background-size: 2750px;
-  }
+  background-color: #193f44;
 }
 
 /* header-wrapper */
@@ -75,12 +39,12 @@ body {
   padding: 0px;
   margin: 0;
   font-size: small;
-  color: rgb(0, 0, 0);
+  color: rgb(254, 254, 254);
   margin: 10px;
 }
 
 #header-info a {
-  color: rgba(2, 2, 2, 0.611);
+  color: rgba(255, 255, 255, 0.611);
 }
 
 /* top-menu-bar */
@@ -91,7 +55,7 @@ body {
   padding: 0;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 2px;
-  background-color: #0a244084;
+  background-color: #193f44;
 }
 
 #top-menu-bar li {
@@ -104,7 +68,7 @@ body {
 
 #top-menu-bar a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   padding: 12px;
   transition: 0.5s;
   display: inline-block;
@@ -113,7 +77,7 @@ body {
 
 #top-menu-bar a:hover {
   color: rgb(0, 0, 0);
-  background-color: rgba(173, 160, 252, 0.32);
+  background-color: rgba(252, 171, 160, 0.32);
 }
 
 /* content */
@@ -131,7 +95,7 @@ body {
 }
 
 #side-menu h2 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 #side-menu section {
@@ -149,7 +113,7 @@ body {
 
 #sectione-left-menu label {
   padding: 10px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 20px;
 }
 
@@ -169,9 +133,9 @@ body {
   height: 35px;
   width: 112px;
   border: 2px solid rgb(3, 3, 3);
-  border-radius: 20px;
+  border-radius: 10px;
   background: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: large;
 }
 
@@ -191,7 +155,7 @@ body {
 
 .page {
   display: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border-radius: 0.5rem;
   margin-bottom: 1.6rem;
 }
@@ -200,11 +164,12 @@ body {
   font-style: italic;
   padding: 5px;
   margin: 10px;
+  color: white;
 }
 
 #home p {
   margin: 5px;
-  color: rgb(6, 6, 6);
+  color: rgb(255, 255, 255);
 }
 
 #skills h2 {
@@ -213,11 +178,11 @@ body {
 
 #skills-list {
   margin: 10px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 #skills-list span {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 3, 3);
   font-weight: 200px;
 }
 
@@ -229,7 +194,7 @@ body {
 
 #projects a {
   text-decoration: none;
-  color: rgb(6, 6, 6);
+  color: rgb(255, 255, 255);
 }
 
 #languages {
